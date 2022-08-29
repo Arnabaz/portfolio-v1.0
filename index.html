@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+        <meta
+            name="description"
+            content="Bienvenue sur le portfolio de Clément Vallet - Développeur Web"
+        />
+
+        <link rel="canonical" href="https://clementvallet.com" />
+
+        <title>Clément Vallet - Portfolio</title>
+
+        <link rel="stylesheet" href="./styles/normalizer.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+        <script
+            src="https://kit.fontawesome.com/662296abb9.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-LZTX4BBD0Y"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-LZTX4BBD0Y");
+        </script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <!-- Logo -->
+            <a class="logo-link unfolded" href="/">
+                <svg
+                    id="logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    viewBox="-3 0 56 50"
+                >
+                    <polygon
+                        id="logo-polygon"
+                        points="14.645,0 35.352,0 50,14.645 50,35.352 35.352,50 14.645,50 0,35.352 0,14.645"
+                    />
+                    <text id="logo-text" x="13" y="35">C</text>
+                </svg>
+            </a>
+            <!-- Navbar -->
+            <div class="menu-toggle">
+                <div class="bars-icon">
+                    <div class="bars-icon-inner"></div>
+                </div>
+            </div>
+            <nav class="menu-navbar folded">
+                <ul>
+                    <li class="menu-navbar_item">
+                        <a class="menu-navbar_link" href="/"
+                            ><i class="fa-solid fa-house"></i>Accueil</a
+                        >
+                    </li>
+                    <li class="menu-navbar_item">
+                        <a class="menu-navbar_link" href="#about"
+                            ><i class="fa-solid fa-person"></i>A propos</a
+                        >
+                    </li>
+                    <li class="menu-navbar_item">
+                        <a class="menu-navbar_link" href="#projects"
+                            ><i class="fa-solid fa-cubes"></i>Projets</a
+                        >
+                    </li>
+                    <li class="menu-navbar_item">
+                        <a class="menu-navbar_link" href="#contact"
+                            ><i class="fa-solid fa-envelope"></i>Contact</a
+                        >
+                    </li>
+                    <!--<li class="menu-navbar_item">
+                        <a class="menu-navbar_link" href="#">Voir mon CV</a>
+                    </li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <!-- Presentation -->
+            <section class="presentation">
+                <header>
+                    <h1>Bonjour et bienvenue !</h1>
+                    <h2>Je suis <strong>Clément</strong>,</h2>
+                    <h2>Développeur web</h2>
+                </header>
+                <!--<a class="contact-link" href="#contact">Contactez-moi !</a>-->
+                <canvas id="canvas"></canvas>
+            </section>
+
+            <!-- A propos -->
+            <section class="about" id="about">
+                <header><h2>A propos</h2></header>
+                <figure>
+                    <div class="about__bcg--img"></div>
+                    <img
+                        class="about__img"
+                        src="./images/profile_XL.webp"
+                        alt="Clément Vallet"
+                    />
+                </figure>
+                <div class="about__text">
+                    <p>
+                        Hey ! Je suis Clément Vallet, développeur web de 32 ans
+                        et récemment diplômé de la formation Développeur Web
+                        d’OpenClassrooms.
+                    </p>
+                    <p>
+                        &#128187; Passionné par l’informatique depuis mon
+                        adolescence, j’ai grandi avec l’essor du Web mais je
+                        n’avais jamais pensé en faire mon métier. Depuis
+                        maintenant un an, j’ai décidé de me lancer dans le grand
+                        bain ! Disposant de compétences de base me permettant de
+                        gérer un projet full-stack, j'ai tout de même une
+                        préférence pour le front-end. Je développe donc des
+                        projets avec du JavaScript Vanilla et plus récemment
+                        avec React (que j’adore !). Je suis également à l’aise
+                        en intégration web (HTML/CSS + animations CSS/JS).
+                    </p>
+                    <p>
+                        &#128188; Actuellement, je suis à la recherche d'un
+                        emploi dans la région de Montpellier mais je reste
+                        ouvert à toute proposition me permettant de travailler
+                        dans le développement Web.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="projects" id="projects">
+                <header><h2>Projets</h2></header>
+                <div class="carousel"></div>
+            </section>
+            <!-- Contact -->
+            <section class="contact" id="contact">
+                <header><h2>Contact</h2></header>
+                <p>
+                    Je suis actuellement à la recherche de nouvelles
+                    opportunités de travail &#128187;. Cependant, ma boite
+                    e-mail reste toujours ouverte, que ce soit pour une
+                    question, me proposer des idées de projets ou si vous
+                    souhaitez juste faire un coucou ! &#128075;
+                </p>
+                <form class="contact__form" action="#" name="contact-form">
+                    <label class="label-form label-name" for="fullname"
+                        >Nom complet</label
+                    >
+                    <input
+                        class="contact__form--input"
+                        type="text"
+                        name="fullname"
+                        id="fullname"
+                        placeholder="Entrez votre nom complet"
+                        required
+                    />
+                    <label class="label-form label-email" for="email"
+                        >E-mail</label
+                    >
+                    <input
+                        class="contact__form--input"
+                        type="text"
+                        name="email"
+                        id="email"
+                        placeholder="Entrez votre email"
+                        required
+                    />
+                    <label class="label-form label-message" for="message"
+                        >Message</label
+                    >
+                    <textarea
+                        class="contact__form--textarea"
+                        name="message"
+                        id="message"
+                        placeholder="Ecrivez votre message"
+                        required
+                    ></textarea>
+                    <button name="contact-form">Envoyer</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <h2 class="footer_title">
+                Vous pouvez également me retrouver sur :
+            </h2>
+            <nav class="footer_nav">
+                <ul>
+                    <li class="footer_social">
+                        <a
+                            class="footer_link"
+                            href="https://twitter.com/ArnabazFR"
+                            ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                    </li>
+                    <li class="footer_social">
+                        <a
+                            class="footer_link"
+                            href="https://github.com/Arnabaz"
+                        >
+                            <i class="fa fa-brands fa-github"></i
+                        ></a>
+                    </li>
+                    <li class="footer_social">
+                        <a
+                            class="footer_link"
+                            href="https://www.linkedin.com/in/vallet-clement"
+                        >
+                            <i class="fa fa-brands fa-linkedin"></i
+                        ></a>
+                    </li>
+                    <li class="footer_social">
+                        <a
+                            class="footer_link"
+                            href="mailto:contact@clementvallet.com"
+                            ><i class="fa fa-solid fa-envelope"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer_credits">
+                Site conçu et créé par Clément Vallet - ©2022
+            </p>
+        </footer>
+
+        <!-- Script -->
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/slide-project.js"></script>
+    </body>
+</html>
